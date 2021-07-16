@@ -159,3 +159,4 @@
     map <C-l> <C-W>l
 
     command Setup e ~/.config/nvim/init.vim
+    command Zsh e ~/.zshrc
