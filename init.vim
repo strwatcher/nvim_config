@@ -14,7 +14,7 @@
         \   'javascript': ['eslint'],
         \   'typescript': ['eslint','tslint', 'xo'],
         \   'css': ['stylelint', 'fecs'],
-        \   'rust': ['rustfmt', 'rls'],
+        \   'rust': ['rustfmt'],
     \}
 
     let g:lightline = {
@@ -149,7 +149,7 @@
 
     nmap <leader>r :NERDTreeFocus<cr>R<c-w><c-p>
     nmap <leader>w :w!<cr>
-    nmap <leader>t :belowright split<cr>:terminal<cr>:10winc -<cr>
+    nmap <leader>t :belowright split<cr>:cd %:h<cr>:terminal<cr>:10winc -<cr>
     nmap <leader>n :NERDTree<cr>
     nmap <leader>o :tabnew<cr>
 
