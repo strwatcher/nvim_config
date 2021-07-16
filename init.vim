@@ -41,8 +41,8 @@
     let g:lightline.active = {
             \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
             \            [ 'lineinfo' ],
-	        \            [ 'percent' ],
-	        \            [ 'fileformat', 'fileencoding', 'filetype'] ]
+	    \            [ 'percent' ],
+	    \            [ 'fileformat', 'fileencoding', 'filetype'] ]
         \}
 
 
@@ -149,7 +149,7 @@
 
     nmap <leader>r :NERDTreeFocus<cr>R<c-w><c-p>
     nmap <leader>w :w!<cr>
-    nmap <leader>t :belowright split<cr>:terminal<cr>:15winc -<cr>
+    nmap <leader>t :belowright split<cr>:terminal<cr>:10winc -<cr>
     nmap <leader>n :NERDTree<cr>
     nmap <leader>o :tabnew<cr>
 
@@ -159,5 +159,3 @@
     map <C-l> <C-W>l
 
     command Setup e ~/.config/nvim/init.vim
-
-"au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe \"normal! g'\"" | endif"
